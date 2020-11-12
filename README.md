@@ -52,3 +52,19 @@ Toute la table apparaît bien.
 
 [Documentation officielle](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/beans/factory/annotation/Autowired.html)
 cet attribut sera automatiquement initialisé de façon pertinente par Spring.
+
+## Étape 30 : Bootstrap
+Bootstrap est un _framework_ Javascript, il s'inclut donc comme n'importe quel script Javascript, directement dans chaque fichier HTML :
+```HTML
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+```
+
+(Jquery est inclus aussi en tant que dépendance de Bootstrap.)
+
+Lien de documentation : [https://www.javatpoint.com/bootstrap-example](https://www.javatpoint.com/bootstrap-example) et suivants
+
+De plus, rajouter
+```HTML
+<meta name="viewport" content="width=device-width, initial-scale=1">```
+dans l'en-tête HTML permet à la page d'être plus  _responsive_ .

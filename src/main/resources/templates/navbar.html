@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Navbar commune à toutes les pages</title>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />  
+</head>
+<body>
+	<nav th:fragment="navbar">
+		<ul>
+			<li><a href='/greeting'> Hello World </a></li>
+			<li><a href='/adresse'> Adresses </a></li>
+		</ul>
+	</nav>
+</body>
+</html>
+
+<!--
+Un fragment est défini par th:fragment="nomFragment".
+Il peut être inséré dans un autre fichier dans un <th:block></th:block>
+ex : <th:block th:replace="~{navbar.html::navbar}"></th:block>
+2 modes : insert ou replace
+'insert' remplace le contenu du bloc par la cible du fragment
+'replace' remplace le bloc par ~
+-->
