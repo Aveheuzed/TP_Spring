@@ -1,4 +1,4 @@
-package A.tp.tp5.model;
+package A.tp.tp5.model.AdresseJSON;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

@@ -1,5 +1,7 @@
 # Réponse aux questions théoriques du TP
 
+**note : Il n'y a pas de page par défaut, ni de page d'erreur; pour naviguer sur le site, allez bien sur [http://localhost:8080/greeting]**
+
 ## Étape 5 : liste des dépendances Spring :
 
 ### Spring Web
@@ -41,6 +43,7 @@ Dans la classe, les annotations `@Id` et `@GeneratedValue` signalent, respective
 
 ## Étape 20 : requête `SELECT` après peuplement de la table
 > **SELECT * FROM ADDRESS;**
+> 
 > ID  	CONTENT  								CREATION  
 > 1		57 boulevard demorieux					2020-11-12
 > 2		51 allee du gamay, 37080 montpellier	2020-11-12
@@ -68,3 +71,14 @@ De plus, rajouter
 ```HTML
 <meta name="viewport" content="width=device-width, initial-scale=1">```
 dans l'en-tête HTML permet à la page d'être plus  _responsive_ .
+
+
+# Partie 2
+## étape 6 :
+* Il faut une clef API pour utiliser OpenWeatherMap, l'inscription est obligatoire (mais l'API est gratuite pour un usage basique)
+* URL à appeler : [http://api.openweathermap.org/data/2.5/weather] +param_list
+* L'API fonctionne en GET
+* Les paramètres sont passés en GET, i.e. dans l'URL : URL + '?' + param1=val1&param2=val2&param3=val3
+* Pour afficher la température : dans Main.temp / Main.feels_like;
+* Pour afficher la prévision météo : dans Weather.desctiption;
+
